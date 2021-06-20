@@ -27,6 +27,7 @@ header h1{
     font-size: 36px;
     color: #fce138;
     margin: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 header a{
     color: #fce138;
@@ -45,7 +46,8 @@ header nav ul {
 header nav ul li a{
     padding: 10px 15px;
     font-weight: lighter;
-    font-size: 1.5
+    font-size: 1.55vw;
+    text-shadow: rgba(0, 0, 0, 0.5);
 }
 header nav ul li a:hover {
     background: #fce138;
@@ -100,6 +102,7 @@ section{
     font-style: italic;
     font-size: 55px;
     color: #fce138;
+    text-shadow: rgba(0, 0, 0, 0.5);
 }
 .hero-form {
     border: 3px solid #024e76;
@@ -109,6 +112,7 @@ section{
     color:#024e76;
     width: 40%;
     margin: 3.5%;
+    box-shadow: rgba(0, 0, 0, 0.5);
 }
 .hero-form h3{
     font-size: x-large;
@@ -126,6 +130,7 @@ section{
     color: #024e76;
     width: 100%;
     margin-bottom: 15px;
+    background-color: (255, 255, 255, 0.75);
 }
 .hero-form label {
     margin: 0 5px;
@@ -205,6 +210,9 @@ section{
 .step-text p {
     color: #39a6b2;
     font-size: 18px;
+}
+.step:last-child{
+    border-bottom: none;
 }
 .step:nth-child(even){
     border-bottom: 1px solid #39a6b2;
@@ -331,7 +339,8 @@ section{
     background-color: rgba(255, 255, 235, 0.5);
 }
 .contact-form input:focus, .contact-form textarea:focus {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(255, 255, 255, 1);
+    outline: none;
 }
 
 @media screen and (max-width: 980px){
@@ -365,7 +374,13 @@ section{
         text-align: center;
     }
     .section-title {
-        width: 80%;
+        font-size: 48px;
+        border-bottom: 3px solid;
+        width: 50%;
+        color: #024e76;
+        padding-bottom: 20px;
+        text-align: center;
+        margin: 0 auto 35px auto;
     }
     .trainer {
         flex: 0 70%;
@@ -410,7 +425,12 @@ section{
         width: 95%;
     }
     .intro p {
-        width: 100%;
+        line-height: 1.7;
+        color: #39a6b2;
+        width: 80%;
+        margin: 0 auto;
+        font-size: 20px;
+        text-align: center;
     }
     .trainer {
         flex: 0 100%;
